@@ -1,0 +1,41 @@
+﻿<Window x:Class="ScreenRotateApp.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        mc:Ignorable="d"
+        Title="Screen Rotate Test App"
+        SizeToContent="WidthAndHeight">
+    <Grid Margin="5">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+        </Grid.RowDefinitions>
+
+        <Button Grid.Row="0"
+                Margin="5"
+                Padding="100,4"
+                Content="Rotate 0 degrees."
+                Click="OnClick0Degrees"/>
+        
+        <Button Grid.Row="1"
+                Margin="5"
+                Padding="100,4"
+                Content="Rotate 90 degrees."
+                Click="OnClick90Degrees"/>
+        
+        <Button Grid.Row="2"
+                Margin="5"
+                Padding="100,4"
+                Content="Rotate 180 degrees."
+                Click="OnClick180Degrees"/>
+
+        <Button Grid.Row="3"
+                Margin="5"
+                Padding="100,4"
+                Content="Rotate 270 degrees."
+                Click="OnClick270Degrees"/>
+    </Grid>
+</Window>
